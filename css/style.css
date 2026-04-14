@@ -1,6 +1,4 @@
-*{
-    background: rgb(253, 246, 247);
-}
+
 
 .navli{
     background-color: white;
@@ -14,4 +12,13 @@
 .navbtn{
     background: rgb(253, 134, 213);
     color: black;
+}
+.card.firstCard {
+  background: rgb(99, 99, 233) !important;
+}
+.card.thirdCard{
+    background: rgb(2, 165, 2);
+}
+body{
+    background: rgb(253, 246, 247);
 }
