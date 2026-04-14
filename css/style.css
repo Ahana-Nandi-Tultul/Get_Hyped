@@ -21,4 +21,9 @@
 }
 body{
     background: rgb(253, 246, 247);
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
 }
