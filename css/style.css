@@ -23,7 +23,28 @@ body{
     background: rgb(253, 246, 247);
     margin: 0;
 }
+.container {
+  position: relative;
+}
+.cards {
+  opacity: 0;
+  transform: translateY(120px);
+  transition: all 0.8s ease;
+  transform-origin: top;
+}
 
+/* when visible */
+.cards.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* previous card fall effect */
+.cards.fall {
+  opacity: 0;
+  transform: translateY(150px) rotateX(75deg);
+  transition: all 0.8s ease;
+}
 *{
     box-sizing: border-box;
 }
