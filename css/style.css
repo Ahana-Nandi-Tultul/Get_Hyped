@@ -45,6 +45,112 @@ body{
   transform: translateY(150px) rotateX(75deg);
   transition: all 0.8s ease;
 }
+
+/* card border like image */
+.custom-card {
+  width: 320px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.custom-card1{
+    border: 6px solid #ff4d1c;
+
+}
+
+.custom-card2{
+    border: 6px solid blue;
+
+}
+.custom-card3{
+    border: 6px solid green;
+
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* 🔥 SLANTED OVERLAY (NOT TRIANGLE) */
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  clip-path: polygon(0 18%, 100% -8%, 100% 100%, 0% 100%);
+
+  z-index: 1; /* 👈 important */
+}
+
+.overlay-box1{
+  background: #ff4d1c;
+}
+.overlay-box2{
+  background: blue;
+}
+.overlay-box3{
+  background: green;
+}
+
+/* text */
+.overlay-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* tag button */
+.tag {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.tag1{
+    background: #ff8a65;
+}
+
+.tag2{
+  background: rgb(143, 143, 247);
+}
+
+.tag3{
+  background: rgb(4, 165, 4);
+}
+
+/* floating circle button */
+.floating-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 90px;
+
+  width: 45px;
+  height: 45px;
+  background: white;
+  color: black;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  z-index: 3; /* 👈 THIS FIXES IT */
+}
+
 *{
     box-sizing: border-box;
 }
