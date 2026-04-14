@@ -151,6 +151,45 @@ body{
   z-index: 3; /* 👈 THIS FIXES IT */
 }
 
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  gap: 10px;
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* INFINITE SCROLL */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 *{
     box-sizing: border-box;
 }
