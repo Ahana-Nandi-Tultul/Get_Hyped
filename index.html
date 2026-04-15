@@ -42,11 +42,10 @@
                 </div>
                 <ul tabindex="-1"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <a>Parent</a>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li><a class=" navli">Expertise</a></li>
+                    <li><a class="navli">Work</a></li>
+                    <li><a class="navli">About</a></li>
+                    <li><a class="navli">Contact</a></li>
                 </ul>
             </div>
             <a class="btn btn-ghost text-2xl w-30 h-20"><img src="navbar.png" alt="" class="w-full h-full"></a>
@@ -269,8 +268,8 @@
             </button>
         </section>
         <section class="md:w-11/12 mx-auto p-3">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="card custom-card custom-card1">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto">
+                <div class="card custom-card custom-card1 w-full">
 
                     <div class="image-box">
                         <img src="./images/section1.avif" alt="">
@@ -331,7 +330,7 @@
                 </h1>
             </div>
         </section>
-        <section class="logo-slider">
+        <section class="logo-slider pb-5">
             <div class="slider-track">
 
                 <!-- FIRST SET -->
@@ -351,6 +350,89 @@
 
             </div>
         </section>
+        <section class="mt-20 flex justify-center items-center">
+            <div>
+                <h1 class="font-bold leading-tight text-2xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl">
+                    Let's Get Hyped
+                </h1>
+                <div class="flex justify-center items-center gap-5 mt-4">
+                    <button class="btn btn-soft rounded-xl">Mail ons direct
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                    <button class="btn bg-orange-500 text-white rounded-xl">Mail ons direct
+                        <i class="fa-solid fa-fire"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="relative">
+            <div class="footer-slant w-full px-8 pt-32 pb-12 md:px-20 lg:px-32">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-end">
+
+                    <div class="flex items-end h-full">
+                        <img src="navbar.png" alt="">
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-wrap gap-2">
+                            <a href="#"
+                                class="bg-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-gray-100 transition shadow-sm">Expertises</a>
+                            <a href="#"
+                                class="bg-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-gray-100 transition shadow-sm">Work</a>
+                            <a href="#"
+                                class="bg-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-gray-100 transition shadow-sm">About</a>
+                            <a href="#"
+                                class="bg-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-gray-100 transition shadow-sm">Contact</a>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <span class="font-bold text-lg text-black">Follow us</span>
+                            <div class="flex gap-2">
+                                <a href="#"
+                                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition shadow-sm">
+                                    <i class="fab fa-linkedin-in text-black"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition shadow-sm">
+                                    <i class="fab fa-tiktok text-black"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition shadow-sm">
+                                    <i class="fab fa-instagram text-black"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition shadow-sm">
+                                    <i class="fab fa-youtube text-black"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 text-sm md:text-base">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Contact</h3>
+                            <p class="text-gray-800">info@gethyped.nl</p>
+                            <p class="text-gray-800">+31 6 1533 7496</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Adres</h3>
+                            <p class="text-gray-800">Beltrumsestraat 6,<br>7141 AL Groenlo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-4">
+                    <p>© <span id="year"></span> Get Hyped</p>
+                    <p>© Design by Ahana</p>
+                    <a href="#" class="hover:underline">Privacyvoorwaarden</a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
         <script src="./js/script.js"></script>
 </body>
 

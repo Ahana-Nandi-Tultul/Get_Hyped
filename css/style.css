@@ -1,31 +1,35 @@
-
-
-.navli{
-    background-color: white;
-    color: black;
-}
-.navli:hover{
-    background-color: black;
-    color: white;
+.navli {
+  background-color: white;
+  color: black;
 }
 
-.navbtn{
-    background: rgb(253, 134, 213);
-    color: black;
+.navli:hover {
+  background-color: black;
+  color: white;
 }
+
+.navbtn {
+  background: rgb(253, 134, 213);
+  color: black;
+}
+
 .card.firstCard {
   background: rgb(99, 99, 233) !important;
 }
-.card.thirdCard{
-    background: rgb(2, 165, 2);
+
+.card.thirdCard {
+  background: rgb(2, 165, 2);
 }
-body{
-    background: rgb(253, 246, 247);
-    margin: 0;
+
+body {
+  background: rgb(253, 246, 247);
+  margin: 0;
 }
+
 .container {
   position: relative;
 }
+
 .cards {
   opacity: 0;
   transform: translateY(120px);
@@ -53,17 +57,18 @@ body{
   border-radius: 25px;
 }
 
-.custom-card1{
-    border: 6px solid #ff4d1c;
+.custom-card1 {
+  border: 6px solid #ff4d1c;
 
 }
 
-.custom-card2{
-    border: 6px solid blue;
+.custom-card2 {
+  border: 6px solid blue;
 
 }
-.custom-card3{
-    border: 6px solid green;
+
+.custom-card3 {
+  border: 6px solid green;
 
 }
 
@@ -92,16 +97,19 @@ body{
 
   clip-path: polygon(0 18%, 100% -8%, 100% 100%, 0% 100%);
 
-  z-index: 1; /* 👈 important */
+  z-index: 1;
+  /* 👈 important */
 }
 
-.overlay-box1{
+.overlay-box1 {
   background: #ff4d1c;
 }
-.overlay-box2{
+
+.overlay-box2 {
   background: blue;
 }
-.overlay-box3{
+
+.overlay-box3 {
   background: green;
 }
 
@@ -119,15 +127,15 @@ body{
   font-size: 12px;
 }
 
-.tag1{
-    background: #ff8a65;
+.tag1 {
+  background: #ff8a65;
 }
 
-.tag2{
+.tag2 {
   background: rgb(143, 143, 247);
 }
 
-.tag3{
+.tag3 {
   background: rgb(4, 165, 4);
 }
 
@@ -148,7 +156,8 @@ body{
   justify-content: center;
 
   font-size: 18px;
-  z-index: 3; /* 👈 THIS FIXES IT */
+  z-index: 3;
+  /* 👈 THIS FIXES IT */
 }
 
 .logo-slider {
@@ -185,11 +194,23 @@ body{
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
 
-*{
-    box-sizing: border-box;
+.footer-slant {
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #e5e2d9;
+  /* The beige-grey tone from the image */
+}
+
+.logo-font {
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: -2px;
+}
+
+* {
+  box-sizing: border-box;
 }
